@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="de" ng-app="bitquiz">
+
+    <head>
+        <meta charset="utf-8">
+        <title>BITQuiz</title>
+
+        <meta charset="utf-8">
+        <meta name="author" content="Jan G. Wieners">
+        <meta name="description" content="BitQuiz - Klausurfragen zu Basisinformationstechnologie II">
+        <meta name="keywords" content="BitQuiz, Klausurfragen">
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    </head>
+
+    <body>
+
+        <main ng-controller="questionCtrl">
+
+            <div id="questionButton" ng-click="getQuestion()">?</div>
+            <div id="question">
+                <fade-on-change value-to-watch="question"></fade-on-change>
+            </div>
+
+        </main>
+
+        <footer>
+            Don't push the red button!
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular-animate.min.js"></script>
+        <script src="js/underscore-min.js"></script>
+        <script src="js/data.js"></script>
+        <script src="js/bitquiz.js"></script>
+
+    </body>
+
+</html>
