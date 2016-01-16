@@ -3,10 +3,19 @@ angular.module("bitquiz", ["ngAnimate"])
     .controller("questionCtrl", function($scope) {
 
         $scope.question = "";
+        // Randomize questions on startup
+        $scope.questions = _.shuffle(questions);
+        // Array index of current question
+        $scope.current = 0;
 
         $scope.getQuestion = function() {
 
-            $scope.question = _.sample(questions);
+            $scope.question = $scope.questions[$scope.current++];
+
+            // Restart game
+            if ($scope.current === $scope.questions.length) {
+                $scope.current = 0;
+            }
 
         };
 
