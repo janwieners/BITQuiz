@@ -1,2 +1,2 @@
 # BITQuiz
-AngularJS-based question generator for my lecture "Basisinformationstechnologie II", summer term 2015.
+AngularJS-based question generator for my lecture "Basisinformationstechnologie" at the University of Cologne.
